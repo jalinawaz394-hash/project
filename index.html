@@ -6,14 +6,14 @@
     <title>SportsPro - Premium Sports Equipment & Gear</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+       
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f4f4f4;
         }
-        
+       
         nav {
             background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
             padding: 1rem 0;
@@ -22,7 +22,7 @@
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
-        
+       
         nav .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -32,7 +32,7 @@
             align-items: center;
             flex-wrap: wrap;
         }
-        
+       
         nav .logo {
             color: #fff;
             font-size: 1.8rem;
@@ -40,16 +40,16 @@
             text-decoration: none;
             letter-spacing: 2px;
         }
-        
+       
         nav .logo span { color: #00d4ff; }
-        
+       
         nav ul {
             list-style: none;
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
         }
-        
+       
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -57,23 +57,23 @@
             font-weight: 500;
             cursor: pointer;
         }
-        
+       
         nav ul li a:hover { color: #00d4ff; }
-        
+       
         .hamburger {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
         }
-        
+       
         .hamburger span {
             width: 25px;
             height: 3px;
             background: #fff;
             transition: 0.3s;
         }
-        
+       
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -82,7 +82,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+       
         .hero::before {
             content: '⚽🏀🏈⚾🎾🏐';
             position: absolute;
@@ -93,7 +93,7 @@
             transform: translate(-50%, -50%);
             letter-spacing: 3rem;
         }
-        
+       
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
@@ -101,14 +101,14 @@
             position: relative;
             z-index: 1;
         }
-        
+       
         .hero p {
             font-size: 1.4rem;
             margin-bottom: 2rem;
             position: relative;
             z-index: 1;
         }
-        
+       
         .cta-button {
             display: inline-block;
             background: #00d4ff;
@@ -124,22 +124,22 @@
             position: relative;
             z-index: 1;
         }
-        
+       
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0,212,255,0.4);
         }
-        
+       
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+       
         section {
             padding: 4rem 20px;
         }
-        
+       
         section h2 {
             text-align: center;
             font-size: 2.5rem;
@@ -148,7 +148,7 @@
             position: relative;
             padding-bottom: 15px;
         }
-        
+       
         section h2::after {
             content: '';
             position: absolute;
@@ -160,14 +160,14 @@
             background: linear-gradient(90deg, #667eea, #00d4ff);
             border-radius: 2px;
         }
-        
+       
         .sports-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2.5rem;
             margin-top: 2rem;
         }
-        
+       
         .sport-card {
             background: white;
             border-radius: 15px;
@@ -176,12 +176,12 @@
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
-        
+       
         .sport-card:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
-        
+       
         .sport-image {
             width: 100%;
             height: 280px;
@@ -193,35 +193,35 @@
             position: relative;
             overflow: hidden;
         }
-        
+       
         .sport-card:nth-child(1) .sport-image {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
-        
+       
         .sport-card:nth-child(2) .sport-image {
             background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
         }
-        
+       
         .sport-card:nth-child(3) .sport-image {
             background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         }
-        
+       
         .sport-card:nth-child(4) .sport-image {
             background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
         }
-        
+       
         .sport-card:nth-child(5) .sport-image {
             background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
         }
-        
+       
         .sport-card:nth-child(6) .sport-image {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
         }
-        
+       
         .sport-info {
             padding: 2rem;
         }
-        
+       
         .sport-category {
             color: #667eea;
             font-weight: bold;
@@ -231,32 +231,32 @@
             margin-bottom: 0.5rem;
             display: block;
         }
-        
+       
         .sport-info h3 {
             color: #0f2027;
             margin-bottom: 0.5rem;
             font-size: 1.4rem;
         }
-        
+       
         .sport-price {
             font-size: 1.6rem;
             color: #00d4ff;
             font-weight: bold;
             margin: 1rem 0;
         }
-        
+       
         .sport-description {
             color: #666;
             margin-bottom: 1rem;
             line-height: 1.6;
         }
-        
+       
         .sport-rating {
             color: #ffd700;
             margin-bottom: 1rem;
             font-size: 1.1rem;
         }
-        
+       
         .buy-btn {
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #00d4ff 100%);
@@ -270,19 +270,19 @@
             font-size: 1rem;
             font-weight: 600;
         }
-        
+       
         .buy-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+       
         .blog-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
             margin-top: 2rem;
         }
-        
+       
         .blog-card {
             background: white;
             border-radius: 15px;
@@ -291,12 +291,12 @@
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
-        
+       
         .blog-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
-        
+       
         .blog-header {
             height: 220px;
             display: flex;
@@ -305,60 +305,70 @@
             font-size: 5rem;
             color: white;
         }
-        
+       
         .blog-card:nth-child(1) .blog-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        
+       
         .blog-card:nth-child(2) .blog-header {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
-        
+       
         .blog-card:nth-child(3) .blog-header {
             background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
         }
-        
+       
         .blog-content {
             padding: 2rem;
         }
-        
+       
         .blog-date {
             color: #999;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
-        
+       
         .blog-content h3 {
             color: #0f2027;
             margin-bottom: 1rem;
             font-size: 1.5rem;
             line-height: 1.3;
         }
-        
+       
         .blog-content p {
             color: #666;
             line-height: 1.8;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
-        
+       
+        .blog-content ul {
+            color: #666;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+       
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+       
         .read-more {
             color: #667eea;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
-        
+       
         .read-more:hover {
             color: #00d4ff;
         }
-        
+       
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2.5rem;
             margin-top: 2rem;
         }
-        
+       
         .portfolio-card {
             background: white;
             padding: 3rem;
@@ -367,29 +377,29 @@
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        
+       
         .portfolio-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.2);
         }
-        
+       
         .portfolio-icon {
             font-size: 4rem;
             margin-bottom: 1.5rem;
         }
-        
+       
         .portfolio-card h3 {
             color: #0f2027;
             margin-bottom: 1rem;
             font-size: 1.8rem;
         }
-        
+       
         .portfolio-card p {
             color: #666;
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-        
+       
         .portfolio-link {
             display: inline-block;
             color: #667eea;
@@ -400,7 +410,7 @@
             transition: all 0.3s;
             font-weight: 600;
         }
-        
+       
         .portfolio-link:hover {
             background: linear-gradient(135deg, #667eea 0%, #00d4ff 100%);
             color: white;
@@ -408,7 +418,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
         }
-        
+       
         footer {
             background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
             color: white;
@@ -416,11 +426,11 @@
             padding: 3rem 20px;
             margin-top: 4rem;
         }
-        
+       
         footer p {
             margin: 0.5rem 0;
         }
-        
+       
         @media (max-width: 768px) {
             .hamburger { display: flex; }
             nav ul {
@@ -456,7 +466,6 @@
             </ul>
         </div>
     </nav>
-
     <section id="home" class="hero">
         <div class="container">
             <h1>Premium Sports Equipment & Gear</h1>
@@ -464,7 +473,6 @@
             <button class="cta-button" onclick="scrollToSection('products')">Explore Products</button>
         </div>
     </section>
-
     <section id="products">
         <div class="container">
             <h2>Featured Sports Products</h2>
@@ -480,7 +488,6 @@
                         <button class="buy-btn" onclick="alert('✅ Soccer Ball added to cart!')">Add to Cart</button>
                     </div>
                 </div>
-
                 <div class="sport-card">
                     <div class="sport-image">🏀</div>
                     <div class="sport-info">
@@ -492,7 +499,6 @@
                         <button class="buy-btn" onclick="alert('✅ Basketball added to cart!')">Add to Cart</button>
                     </div>
                 </div>
-
                 <div class="sport-card">
                     <div class="sport-image">🎾</div>
                     <div class="sport-info">
@@ -504,7 +510,6 @@
                         <button class="buy-btn" onclick="alert('✅ Tennis Racket added to cart!')">Add to Cart</button>
                     </div>
                 </div>
-
                 <div class="sport-card">
                     <div class="sport-image">🏋️</div>
                     <div class="sport-info">
@@ -516,7 +521,6 @@
                         <button class="buy-btn" onclick="alert('✅ Dumbbell Set added to cart!')">Add to Cart</button>
                     </div>
                 </div>
-
                 <div class="sport-card">
                     <div class="sport-image">🏃</div>
                     <div class="sport-info">
@@ -528,7 +532,6 @@
                         <button class="buy-btn" onclick="alert('✅ Running Shoes added to cart!')">Add to Cart</button>
                     </div>
                 </div>
-
                 <div class="sport-card">
                     <div class="sport-image">🏐</div>
                     <div class="sport-info">
@@ -543,68 +546,88 @@
             </div>
         </div>
     </section>
-
     <section id="blogs">
         <div class="container">
             <h2>Latest Sports Insights</h2>
             <div class="blog-grid">
-                <div class="blog-card" onclick="alert('Blog post: The Ultimate Guide to Choosing the Right Sports Equipment\n\nLearn how to select equipment that matches your skill level, sport requirements, and performance goals!')">
+                <div class="blog-card">
                     <div class="blog-header">📝</div>
                     <div class="blog-content">
                         <p class="blog-date">January 6, 2026</p>
                         <h3>The Ultimate Guide to Choosing the Right Sports Equipment</h3>
-                        <p>Expert advice on selecting equipment that matches your skill level and performance goals...</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <p>Selecting the perfect sports equipment is essential for enhancing performance, ensuring safety, and enjoying your favorite activities. Whether you're a beginner or a seasoned athlete, the right gear can make a significant difference.</p>
+                        <p><strong>Key Steps to Choose the Right Equipment:</strong></p>
+                        <ul>
+                            <li><strong>Understand Your Sport's Requirements:</strong> Each sport has specific gear needs. Research essentials like supportive shoes for running or durable balls for soccer.</li>
+                            <li><strong>Assess Your Skill Level:</strong> Beginners should opt for user-friendly, forgiving equipment, while advanced players may need high-performance specialized gear.</li>
+                            <li><strong>Prioritize Fit and Comfort:</strong> Proper fit prevents injuries. Try gear whenever possible and ensure it feels comfortable during movement.</li>
+                            <li><strong>Focus on Quality and Durability:</strong> Invest in reputable brands with good materials. Read reviews and check for safety certifications.</li>
+                            <li><strong>Consider Safety Features:</strong> Always include protective gear like helmets or pads where needed, ensuring they meet industry standards.</li>
+                            <li><strong>Test Before Buying:</strong> Demo models or trial periods help confirm the gear suits you.</li>
+                            <li><strong>Budget Wisely:</strong> Balance cost with longevity—higher quality often lasts longer and performs better.</li>
+                        </ul>
+                        <p>By following these guidelines, you'll invest in equipment that supports your performance goals and keeps you safe on the field or court.</p>
                     </div>
                 </div>
-
-                <div class="blog-card" onclick="alert('Blog post: 10 Essential Maintenance Tips for Sports Equipment\n\nProtect your investment with proper care and maintenance techniques!')">
+                <div class="blog-card">
                     <div class="blog-header">💪</div>
                     <div class="blog-content">
                         <p class="blog-date">January 4, 2026</p>
                         <h3>10 Essential Maintenance Tips for Sports Equipment Longevity</h3>
-                        <p>Protect your investment with proper care. Learn professional techniques to extend equipment life...</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <p>Proper care extends the life of your sports gear, saves money, and ensures optimal performance. Here are 10 key tips to maintain your equipment:</p>
+                        <ul>
+                            <li><strong>Clean Regularly:</strong> Wipe down gear after each use to remove dirt, sweat, and grime. Use mild soap and water for most items.</li>
+                            <li><strong>Follow Manufacturer Guidelines:</strong> Always check specific care instructions for your equipment.</li>
+                            <li><strong>Store Properly:</strong> Keep gear in a cool, dry place away from direct sunlight and extreme temperatures to prevent material degradation.</li>
+                            <li><strong>Inspect for Wear and Tear:</strong> Regularly check for damage like cracks, frayed strings, or loose parts, and repair or replace as needed.</li>
+                            <li><strong>Dry Thoroughly:</strong> Air out damp items to prevent mold and odors.</li>
+                            <li><strong>Use Protective Accessories:</strong> Covers, bags, or cases shield gear during storage and transport.</li>
+                            <li><strong>Rotate Usage:</strong> Alternate between items (e.g., shoes) to reduce wear on a single piece.</li>
+                            <li><strong>Lubricate Moving Parts:</strong> For items like bikes or rackets, apply appropriate lubricants.</li>
+                            <li><strong>Avoid Harsh Chemicals:</strong> Stick to recommended cleaners to preserve materials.</li>
+                            <li><strong>Professional Servicing:</strong> For complex gear, get periodic professional maintenance.</li>
+                        </ul>
+                        <p>Consistent care protects your investment and keeps your equipment performing at its best.</p>
                     </div>
                 </div>
-
-                <div class="blog-card" onclick="alert('Blog post: 2026 Sports Technology Trends\n\nDiscover cutting-edge technologies transforming athletic performance!')">
+                <div class="blog-card">
                     <div class="blog-header">🎯</div>
                     <div class="blog-content">
                         <p class="blog-date">January 1, 2026</p>
                         <h3>2026 Sports Technology Trends: Innovation in Athletic Performance</h3>
-                        <p>Discover cutting-edge technologies transforming the sports industry and athletic performance...</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <p>The sports technology landscape in 2026 is rapidly evolving, with AI, wearables, and data analytics transforming training, performance, and fan experiences.</p>
+                        <p><strong>Key Trends to Watch:</strong></p>
+                        <ul>
+                            <li><strong>AI-Powered Coaching and Analytics:</strong> Real-time pose estimation and predictive injury prevention using computer vision and machine learning.</li>
+                            <li><strong>Advanced Wearables:</strong> Smarter devices for precise tracking of movement, fatigue, and recovery.</li>
+                            <li><strong>Immersive Technologies:</strong> VR/AR for training simulations and enhanced fan engagement.</li>
+                            <li><strong>Personalized Fan Experiences:</strong> AI-driven content and interactive platforms for deeper connection.</li>
+                            <li><strong>Injury Prevention Systems:</strong> Digital models and sensors predicting risks with high accuracy.</li>
+                            <li><strong>Data-Driven Decision Making:</strong> Expanded use in ticketing, merchandising, and team management.</li>
+                            <li><strong>Agentic AI in Production:</strong> Automating live broadcasts and content creation.</li>
+                        </ul>
+                        <p>These innovations are making sports safer, more efficient, and more exciting for athletes and fans alike.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="portfolio">
         <div class="container">
             <h2>Connect With Me</h2>
-            
-
-
-
-
-
+            <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <div class="portfolio-icon">🎨</div>
-                    <h3>portfolio</h3>
-                    <p>My professional portfoli.</p>
+                    <h3>Portfolio</h3>
+                    <p>My professional portfolio.</p>
                     <a href="https://jalinawaz394-hash.github.io/Portfolio/" target="_blank" class="portfolio-link">View Portfolio</a>
                 </div>
-
-
                 <div class="portfolio-card">
                     <div class="portfolio-icon">🎨</div>
                     <h3>Behance</h3>
                     <p>Discover my design portfolio with creative projects, UI/UX designs, and branding work.</p>
                     <a href="https://www.behance.net/alinawaz123" target="_blank" class="portfolio-link">View Portfolio</a>
                 </div>
-
                 <div class="portfolio-card">
                     <div class="portfolio-icon">💻</div>
                     <h3>GitHub</h3>
@@ -614,18 +637,16 @@
             </div>
         </div>
     </section>
-
     <footer>
         <p><strong>SportsPro</strong> - Premium Sports Equipment & Athletic Gear</p>
         <p>&copy; 2026 SportsPro. All Rights Reserved.</p>
         <p>Professional Sports Equipment | Worldwide Shipping | Expert Support</p>
     </footer>
-
     <script>
         function toggleMenu() {
             document.getElementById('navMenu').classList.toggle('active');
         }
-        
+       
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId);
             if (element) {
